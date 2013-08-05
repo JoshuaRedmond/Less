@@ -14,7 +14,6 @@
 
 <body <?php body_class(); ?>>
 
-
 <?php
 	/*-----------------------------------------------------------------------------------*/
 	/* Start header
@@ -23,12 +22,10 @@
 
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
-		
-		<div class="gravatar">
+
+		<div class="icon">
 			<?php 
-				// grab admin email and their photo
-				$admin_email = get_option('admin_email');
-				echo get_avatar( $admin_email, 100 ); 
+				echo '<img alt="" src="http://blog.joshuaredmond.co.uk/wp-content/uploads/2013/05/icon100square.png" class="avatar avatar-100 photo" height="100" width="100">'
 			?>
 		</div><!--/ author -->
 		
@@ -87,7 +84,7 @@
 						
 						<div class="meta clearfix">
 							<div class="category"><?php echo get_the_category_list(); ?></div>
-							<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); ?></div>
+							<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;&nbsp;' ); ?></div>
 						</div><!-- Meta -->
 						
 					</article>
@@ -145,7 +142,7 @@
 						
 						<div class="meta clearfix">
 							<div class="category"><?php echo get_the_category_list(); ?></div>
-							<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); ?></div>
+							<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;&nbsp;' ); ?></div>
 						</div><!-- Meta -->						
 						
 					</article>
@@ -220,9 +217,9 @@
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
 		<?php do_action( 'break_credits' ); ?>
-		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-		<span class="sep"> and </span>
-		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a>
+		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Powered by WordPress</a>
+		<span class="sep">. Styled with the </span>
+		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> theme by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a>. Style tweaked by <a href="http://www.JoshuaRedmond.co.uk" rel="author">Joshua Redmond</a>.
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
