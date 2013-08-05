@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 /*
 Theme Name: Less
 Theme URI: http://lessmade.com/themes/less
@@ -7,6 +7,7 @@ Author URI: http://jarederickson.com
 Description: A super simple theme that can be customized using LESS variables
 Version: 1.1
 License: GNU General Public License
+Tweaker: Joshua Redmond
 
 */
 /* LESS variables - Change the look of your site simply.
@@ -17,6 +18,7 @@ License: GNU General Public License
    v2.0 | 20110126
    License: none (public domain)
 */
+/* line 9, reset.less */
 html,
 body,
 div,
@@ -106,6 +108,7 @@ video {
   font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
+/* line 30, reset.less */
 article,
 aside,
 details,
@@ -119,6 +122,7 @@ nav,
 section {
   display: block;
 }
+/* line 34, reset.less */
 html {
   margin: 0;
   padding: 0;
@@ -132,14 +136,17 @@ html {
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 
 }
+/* line 42, reset.less */
 ol,
 ul {
   list-style: none;
 }
+/* line 45, reset.less */
 blockquote,
 q {
   quotes: none;
 }
+/* line 48, reset.less */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -147,26 +154,31 @@ q:after {
   content: '';
   content: none;
 }
+/* line 53, reset.less */
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+/* line 61, reset.less */
 code,
 kbd,
 tt,
 var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
+/* line 64, reset.less */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
+/* line 68, reset.less */
 mark,
 ins {
   background: #fff9c0;
   text-decoration: none;
 }
+/* line 72, reset.less */
 sup,
 sub {
   font-size: 75%;
@@ -175,28 +187,36 @@ sub {
   position: relative;
   vertical-align: baseline;
 }
+/* line 80, reset.less */
 sup {
   bottom: 1ex;
 }
+/* line 83, reset.less */
 sub {
   top: .5ex;
 }
+/* line 86, reset.less */
 small {
   font-size: 75%;
 }
+/* line 89, reset.less */
 big {
   font-size: 125%;
 }
+/* line 92, reset.less */
 figure {
   margin: 0;
 }
+/* line 95, reset.less */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
+/* line 99, reset.less */
 th {
   font-weight: bold;
 }
+/* line 102, reset.less */
 button,
 input,
 select,
@@ -208,10 +228,13 @@ textarea {
   /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 
   vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+
   *vertical-align: middle;
   /* Improves appearance and consistency in all browsers */
 
 }
+/* line 111, reset.less */
 button,
 input {
   line-height: normal;
@@ -221,6 +244,7 @@ input {
   /* Corrects inner spacing displayed oddly in IE6/7 */
 
 }
+/* line 116, reset.less */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -245,6 +269,7 @@ input[type="submit"] {
   padding: 1.12em 1.5em 1em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+/* line 136, reset.less */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -254,6 +279,7 @@ input[type="submit"]:hover {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
+/* line 145, reset.less */
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -267,6 +293,7 @@ input[type="submit"]:active {
   -moz-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+/* line 158, reset.less */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -276,6 +303,7 @@ input[type="radio"] {
   /* Addresses excess padding in IE8/9 */
 
 }
+/* line 163, reset.less */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -286,11 +314,13 @@ input[type="search"] {
 
   box-sizing: content-box;
 }
+/* line 169, reset.less */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 
   -webkit-appearance: none;
 }
+/* line 172, reset.less */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -298,6 +328,7 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+/* line 177, reset.less */
 input[type=text],
 input[type=email],
 textarea {
@@ -305,15 +336,18 @@ textarea {
   border: 1px solid #dddddd;
   border-radius: 5px;
 }
+/* line 184, reset.less */
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
   color: #101010;
 }
+/* line 189, reset.less */
 input[type=text],
 input[type=email] {
   padding: 3px;
 }
+/* line 193, reset.less */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -326,21 +360,24 @@ textarea {
 }
 /* styles
 -------------------------------------------------------------- */
+/* line 111, style.less */
 body,
 button,
 input,
 select {
   padding: 0;
   margin: 0;
-  background: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2a2a2a;
+  font-family: "Noto Sans", Arial, sans-serif;
   line-height: 26.64px;
   font-size: 18px;
   font-size: 1.8rem;
+  color: #f8f8f8;
 }
 /* typography
 -------------------------------------------------------------- */
 /* Headings */
+/* line 129, style.less */
 h1,
 h2,
 h3,
@@ -348,28 +385,33 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Arvo", Georgia, serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
+/* line 139, style.less */
 h1 {
   line-height: 71.03999999999999px;
   font-size: 48px;
   font-size: 4.8rem;
 }
+/* line 143, style.less */
 h2 {
   line-height: 50.32px;
   font-size: 34px;
   font-size: 3.4rem;
 }
+/* line 147, style.less */
 h3 {
   line-height: 41.44px;
   font-size: 28px;
   font-size: 2.8rem;
 }
+/* line 151, style.less */
 h4 {
   line-height: 26.64px;
   font-size: 18px;
   font-size: 1.8rem;
 }
+/* line 155, style.less */
 hr {
   background-color: #ccc;
   border: 0;
@@ -377,19 +419,24 @@ hr {
   margin-bottom: 1.5em;
 }
 /* Text elements */
+/* line 163, style.less */
 p {
   margin-bottom: 1.5em;
 }
+/* line 166, style.less */
 ul,
 ol {
   margin: 0 0 1.5em 3em;
 }
+/* line 169, style.less */
 ul {
   list-style: disc;
 }
+/* line 172, style.less */
 ol {
   list-style: decimal;
 }
+/* line 175, style.less */
 ul ul,
 ol ol,
 ul ol,
@@ -397,28 +444,35 @@ ol ul {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
+/* line 179, style.less */
 dt {
   font-weight: bold;
 }
+/* line 182, style.less */
 dd {
   margin: 0 1.5em 1.5em;
 }
+/* line 185, style.less */
 b,
 strong {
   font-weight: bold;
 }
+/* line 188, style.less */
 dfn,
 cite,
 em,
 i {
   font-style: italic;
 }
+/* line 191, style.less */
 blockquote {
   margin: 0 1.5em;
 }
+/* line 194, style.less */
 address {
   margin: 0 0 1.5em;
 }
+/* line 197, style.less */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -431,8 +485,9 @@ pre {
   max-width: 100%;
 }
 /* Links */
+/* line 211, style.less */
 a {
-  color: #007998;
+  color: #84d2ef;
   -webkit-transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
   -o-transition: color 0.25s ease-in-out;
@@ -440,22 +495,26 @@ a {
   transition: color 0.25s ease-in-out;
   text-decoration: none;
 }
+/* line 217, style.less */
 a:hover,
 a:focus,
 a:active {
-  color: rgba(0, 121, 152, 0.5);
+  color: rgba(132, 210, 239, 0.5);
 }
 /* Alignment */
+/* line 224, style.less */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
+/* line 229, style.less */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
+/* line 234, style.less */
 .aligncenter {
   clear: both;
   display: block;
@@ -463,61 +522,68 @@ a:active {
 }
 /* Header
 -------------------------------------------------------------- */
+/* line 245, style.less */
 header {
   padding: 20px 0;
   background: transparent;
   margin: 20px auto;
 }
-header .gravatar {
+/* line 250, style.less */
+header .logo {
   overflow: hidden;
   width: 100px;
   height: 100px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   margin: 0;
   float: right;
 }
+/* line 258, style.less */
 header #brand {
   float: left;
   width: 80%;
   margin-top: 22px;
 }
+/* line 263, style.less */
 header #brand h1 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
   font-weight: 900;
-  color: #565656;
+  color: #f8f8f8;
   line-height: 23.68px;
   font-size: 16px;
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
+/* line 272, style.less */
 header #brand h1 a {
-  color: #565656;
+  color: #f8f8f8;
   text-decoration: none;
 }
+/* line 280, style.less */
 header #brand h1 span {
   font-weight: 200;
   color: #888888;
   text-transform: lowercase;
 }
+/* line 290, style.less */
 header nav {
   float: left;
 }
+/* line 293, style.less */
 header nav ul {
   list-style: none;
   margin: 0;
 }
+/* line 297, style.less */
 header nav ul li {
   float: left;
   margin: 2px 10px 0 0;
 }
+/* line 301, style.less */
 header nav ul li a {
-  color: #888888;
+  color: #84d2ef;
   font-size: 14px;
 }
+/* line 312, style.less */
 .container {
   max-width: 720px;
   padding: 20px;
@@ -526,48 +592,59 @@ header nav ul li a {
 }
 /* Posts/Articles
 -------------------------------------------------------------- */
+/* line 322, style.less */
 article {
   background: transparent;
   padding: 0;
   margin-bottom: 80px;
   border-bottom: 1px solid #dddddd;
 }
+/* line 328, style.less */
 article .title {
-  color: #404040;
+  color: #f8f8f8;
   line-height: 56.24px;
   font-size: 38px;
   font-size: 3.8rem;
   font-weight: 700;
 }
+/* line 333, style.less */
 article .title a {
   text-decoration: none;
-  color: #404040;
+  color: #f8f8f8;
 }
+/* line 337, style.less */
 article .title a:hover {
-  color: #007998;
+  color: #84d2ef;
 }
+/* line 344, style.less */
 article .post-meta {
   margin-bottom: 40px;
   font-size: 14px;
 }
+/* line 348, style.less */
 article .post-meta a {
   color: #888888;
   text-decoration: none;
 }
+/* line 352, style.less */
 article .post-meta a:hover {
   color: rgba(136, 136, 136, 0.5);
 }
+/* line 361, style.less */
 article .the-content a {
   font-weight: 900;
   text-decoration: none;
 }
+/* line 366, style.less */
 article .the-content p {
-  color: #787878;
+  color: #f8f8f8;
 }
+/* line 370, style.less */
 article .the-content img {
   width: 100%;
   height: auto;
 }
+/* line 378, style.less */
 article .meta {
   line-height: 14.8px;
   font-size: 10px;
@@ -575,44 +652,55 @@ article .meta {
   text-transform: uppercase;
   letter-spacing: .9px;
 }
+/* line 383, style.less */
 article .meta div {
   float: left;
 }
+/* line 387, style.less */
 article .meta .post-categories {
   list-style: none;
   margin: 0 0 10px 0;
 }
+/* line 391, style.less */
 article .meta .post-categories li {
   display: inline-block;
   margin-right: 10px;
 }
 /* Page loop styling */
+/* line 404, style.less */
 .page article {
   border-bottom: none;
 }
+/* line 407, style.less */
 .page article .title {
   margin-bottom: 40px;
 }
 /* Pagination */
+/* line 415, style.less */
 #pagination {
   margin-bottom: 40px;
   width: 100%;
 }
+/* line 419, style.less */
 #pagination .past-page {
   float: right;
 }
+/* line 423, style.less */
 #pagination .next-page {
   float: left;
 }
 /* Comments */
+/* line 432, style.less */
 h3#comments {
   margin-bottom: 80px;
   font-size: 16px;
 }
+/* line 437, style.less */
 .commentlist {
   list-style: none;
   margin: 0;
 }
+/* line 441, style.less */
 .commentlist .comment {
   margin: 0 0 40px 50px;
   padding: 20px;
@@ -622,40 +710,50 @@ h3#comments {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
+/* line 450, style.less */
 .commentlist .comment .children {
   margin-top: 40px;
 }
+/* line 455, style.less */
 .commentlist .comment-author {
   float: left;
   margin-right: 10px;
 }
+/* line 459, style.less */
 .commentlist .comment-author img {
   position: absolute;
   left: -50px;
   top: 5px;
 }
+/* line 465, style.less */
 .commentlist .comment-author .says {
   display: none;
 }
+/* line 475, style.less */
 .comment-meta {
   font-size: 12px;
   margin-bottom: 10px;
 }
+/* line 480, style.less */
 .comment-subscription-form,
 .comment-subscription-form {
   margin-bottom: 0;
   font-size: 14px;
 }
+/* line 485, style.less */
 #respond {
   margin-bottom: 80px;
 }
+/* line 488, style.less */
 #respond > h3 {
   font-size: 16px;
   margin-bottom: 20px;
 }
+/* line 493, style.less */
 #respond form label {
   color: #888888;
 }
+/* line 499, style.less */
 footer {
   text-align: center;
   padding-bottom: 40px;
@@ -663,21 +761,26 @@ footer {
 }
 /* Misc & mixens
 -------------------------------------------------------------- */
-/* Jetpack Gallery */.gallery .gallery-item {
+/* Jetpack Gallery *//* line 515, style.less */
+.gallery .gallery-item {
   margin-top: 0 !important;
 }
+/* line 519, style.less */
 .gallery img {
   border: none !important;
 }
+/* line 524, style.less */
 .hide-text {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
 }
+/* line 530, style.less */
 .clear {
   clear: both;
 }
 /* clear floats */
+/* line 535, style.less */
 .clearfix:after {
   content: ".";
   display: block;
@@ -686,25 +789,33 @@ footer {
   line-height: 0;
   height: 0;
 }
+/* line 544, style.less */
 .clearfix {
   display: inline-block;
 }
+/* line 548, style.less */
 html[xmlns] .clearfix {
   display: block;
 }
+/* line 552, style.less */
 * html .clearfix {
   height: 1%;
 }
 /* Media Queries for responsivenessssssss
 -------------------------------------------------------------- */
 @media (max-width: 767px) {
+  /* line 580, style.less */
   header {
     padding: 0;
   }
-  header .gravatar {
+  /* line 583, style.less */
+  header .logo,
+  header .site-navigation {
     float: none;
   }
-  header hgroup {
+  /* line 587, style.less */
+  header .site-title,
+  header #brand {
     width: 100%;
   }
 }
