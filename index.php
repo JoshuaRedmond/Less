@@ -23,7 +23,7 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 
-		<div class="icon">
+		<div class="logo">
 			<?php 
 				echo '<img alt="" src="http://blog.joshuaredmond.co.uk/wp-content/uploads/2013/05/icon100square.png" class="avatar avatar-100 photo" height="100" width="100">'
 			?>
