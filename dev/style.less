@@ -6,6 +6,7 @@ Author URI: http://jarederickson.com
 Description: A super simple theme that can be customized using LESS variables
 Version: 1.1
 License: GNU General Public License
+Tweaker: Joshua Redmond
 
 */
 
@@ -17,16 +18,16 @@ License: GNU General Public License
 	
 	// Main
 	@primary:			#343434;
-	@secondary:			#007998;
+	@secondary:			#84d2ef;
 	
 	// Shades
 	@dark:				#101010;
 	@grey:				#565656;
 	@light-grey:		#888888;
-	@off-white:			#f8f8f8;
+	@off-white:			#f8f8f8;	
 	
 	// Site background
-	@site-bg:			#fff;
+	@site-bg:			#2a2a2a;
 	
 	// Header background
 	@header-bg:			transparent;
@@ -46,13 +47,14 @@ License: GNU General Public License
 	// ----------------------
 	
 	// if you want to use a webfont from gooogle or something
-	@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+	@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 	
 	// Body Font family
-	@body-font:		"Helvetica Neue", Helvetica, Arial, sans-serif;
+	@body-font:		"Noto Sans", Arial, sans-serif;
+
 	
 	// Heading font family
-	@heading-font:	"Arvo", Georgia, serif;
+	@heading-font:	@body-font;
 	
 	// Site name size
 	@site-text-size:	16;
@@ -64,16 +66,21 @@ License: GNU General Public License
 	@title-text-size:	38;
 	
 	// Site name color
-	@site-name-color:	@grey;
-	
+	@site-name-color:	@off-white;
+
+
 	// Site heading color
-	@headinng-color:	#404040;
+	@headinng-color:	@off-white;
 	
 	// Site Text color
-	@text-color:		#787878;	
+	@text-color:		@off-white;	
+
 	
 	// Link colors
 	@link-color:		@secondary;
+	
+	// Menu colour
+	@menu-color: @secondary;
 	
 	
 	
@@ -111,6 +118,7 @@ select {
 	background: @site-bg;
 	font-family: @body-font;
 	.font-size(@body-text-size);
+	color: @text-color
 }
 
 
@@ -240,13 +248,10 @@ header {
 	background: @header-bg;
 	margin: 20px auto;
 	
-	.gravatar {
+	.logo {
 		overflow: hidden;
 		width: 100px;
 		height: 100px;
-		-moz-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		border-radius: 50%;
 		margin: 0;
 		float: right;
 	}
@@ -263,7 +268,7 @@ header {
 			.font-size(@site-text-size);
 			margin: 0;
 			padding: 0;
-			text-transform: uppercase;
+			//text-transform: uppercase;
 						
 			a {
 				color: @site-name-color;
@@ -295,7 +300,7 @@ header {
 					margin: 2px 10px 0 0;
 					
 					a {
-						color: @light-grey;
+						color: @menu-color;
 						font-size: 14px;
 					}
 				}
@@ -552,8 +557,10 @@ html[xmlns] .clearfix {
 .font-size(@size){
 	@rem-value: (@size / 10);
 	@px-value: @size;
+
 	@lineHeight: (@size * 1.48);
 	line-height: @lineHeight+0px;
+
 	font-size: ~"@{px-value}px"; 
 	font-size: ~"@{rem-value}rem";
 }
@@ -574,17 +581,20 @@ html[xmlns] .clearfix {
 	header {
 		padding: 0;
 		
-		.gravatar {
+		.logo, .site-navigation{
+
 			float: none;
 		}
 		
-		hgroup {
+		.site-title , #brand{
+
 			width: 100%;
 		}
 		
+		
+				
 	}//header
 	
 } // max-width 767px
-
 
 
